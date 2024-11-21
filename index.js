@@ -1,3 +1,4 @@
+
 // First parameter of ReactDOM is what I want to place, and the second is where to place it 
 ReactDOM.render(<h1>Hello React</h1>,document.getElementById("root"));
 
@@ -144,3 +145,33 @@ const navBar = (
 )
 
 ReactDOM.render(navBar, document.getElementById("root"));
+
+// Another way to render the nav bar
+// ReactDOM.createRoot(document.getElementById("root")).render(navBar);
+
+/**
+Challenge: find out what happens if we try to append JSX
+to our div#root using .append() instead of ReactDOM
+
+1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
+2. Select the div with the ID of "root" and use `.append()` to append your JSX
+3. See if you can guess what will show up in the browser before running the code
+4. See if you can explain what actually shows up in the browser
+ */
+
+const page2 = (
+    <div>
+        <h1>My awesome website in React</h1>
+        <h3>Reasons I love React</h3>
+        <ol>
+            <li>It's composable</li>
+            <li>It's declarative</li>
+            <li>It's hirable skill</li>
+            <li>It's actively maintained by skilled people</li>
+        </ol>
+    </div>
+)
+
+// It doesnt work because we are converting React to JS script object, and we need to use React function to interpret them
+//document.getElementById("root").append(JSON.stringify(page2));
+ReactDOM.render(page2, document.getElementById("root"));
