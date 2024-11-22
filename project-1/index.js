@@ -44,27 +44,6 @@ Render your list to the page
 
  */
 
-function SecondPage () {
-    return (
-        <div>
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
-            <h1>Reasons why I'm excited to learn React</h1>
-            <ol>
-                <li>To undestand how frameworks works</li>
-                <li>To create my first full stack website</li>
-                <li>To add the skill to my resume</li>
-            </ol>
-            <footer>
-                <small>© 20xx Martinez development. All rights reserved.</small>
-            </footer>
-        </div>
-    )
-}
-
 /**
 Challenge: 
 
@@ -78,3 +57,56 @@ Part 2:
     "© 20xx <last name here> development. All rights reserved."
  */
 
+function SecondPage () {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
+
+/**
+Mini Challenge:
+Move the `header` element from Page into 
+its own component called "Header"
+*/
+function Header () {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+/**
+Challenge: 
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
+function MainContent () {
+    return (
+        <div>
+            <h1>Reasons why I'm excited to learn React</h1>
+            <ol>
+                <li>To undestand how frameworks works</li>
+                <li>To create my first full stack website</li>
+                <li>To add the skill to my resume</li>
+            </ol>
+        </div>
+    )
+}
+
+function Footer () {
+    return (
+        <footer>
+                <small>© 20xx Martinez development. All rights reserved.</small>
+        </footer>
+    )
+}
