@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0px;
+  font-family: Inter, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #21222A;
+  padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--tittle {
+  margin: 0px;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav--tittle  {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.nav--icon {
+  width: 30px;
+  margin-right: 7px;
+}
