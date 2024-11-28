@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  font-family: Inter, arial;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  margin: 0px;
+}
+h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+}
+h3 {
+  color: lightgrey;
+  font-size: 14px;
+  margin-top: 2px;
+}
+p {
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.info--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 300px;
+  background-color: black;
+}
+
+.info--headshot {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.info--buttons-box {
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.info--buttons-box > button {
+  width: 90px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.info--email-button {
+  background-color: white;
+  color: black;
+}
+
+.info--linkedin-button {
+  background-color: rgb(92, 144, 195);
+  color: white;
+}
