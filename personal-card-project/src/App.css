@@ -51,9 +51,13 @@ p {
 }
 
 .info--buttons-box > button {
-  width: 90px;
+  width: 100px;
   padding: 8px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .info--email-button {
@@ -62,6 +66,14 @@ p {
 }
 
 .info--linkedin-button {
-  background-color: rgb(92, 144, 195);
+  background-color: #0072b1;
   color: white;
+}
+
+.info--email-logo {
+  width: 22px;
+}
+
+.info--linkedin-logo {
+  width: 18px;
 }
