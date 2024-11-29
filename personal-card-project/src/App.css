@@ -18,18 +18,24 @@ h1 {
   font-size: 25px;
   margin-top: 20px;
 }
+h2 {
+  color: lightgrey;
+  font-size: 18px;
+  margin-top: 2px;
+  font-weight: bold;
+}
 h3 {
   color: lightgrey;
   font-size: 14px;
   margin-top: 2px;
 }
 p {
-  color: white;
+  color: rgb(140, 140, 140);
   font-size: 12px;
   margin-top: 10px;
 }
 
-.info--container {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +43,18 @@ p {
   border-radius: 15px;
   width: 300px;
   background-color: black;
+}
+
+.info--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about--container, .interest--container {
+  margin: 10px 30px;
 }
 
 .info--headshot {
