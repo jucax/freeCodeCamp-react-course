@@ -5,11 +5,11 @@ export default function Card() {
             <div className="card--stats">
                 <img src="star.png" className="card--star"/>
                 <span>5.0</span>
-                <span>(6) </span>
-                <span>USA</span>
+                <span className="gray">(6) </span>
+                <span className="gray">USA</span>
             </div>
             <p className="hero--text">Life Lessons with Katie Zaferes</p>
-            <p className="hero--text">From $136 / person</p>
+            <p className="hero--text"><span className="bold">From $136</span> / person</p>
         </div>
     )
 }
