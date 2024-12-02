@@ -175,3 +175,32 @@ const page2 = (
 // It doesnt work because we are converting React to JS script object, and we need to use React function to interpret them
 //document.getElementById("root").append(JSON.stringify(page2));
 ReactDOM.render(page2, document.getElementById("root"));
+
+// Props allow us to insert changing values inside HTML code
+function App() {
+    const firstName = "Joe"
+    const lastName = "Schmoe"
+    const date = new Date();
+
+    // Anythin inside {} can be run as JS code, it can be a value or a function
+    return (
+        <div>
+            <h1>Hello {firstName} {lastName}</h1>
+            <h1>It is currectly about {date.getHours() % 12}</h1>
+        </div>
+    )
+}
+
+// We receive the props as an object
+const person = {
+    img: image.png,
+    name: "Name",
+    phone: "5555"
+}
+
+// When we use it in react we can do it as
+console.log(person.img);
+
+// Or we can destructure it and use
+const {img, name, phone} = person;
+console.log(img);
