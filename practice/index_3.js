@@ -55,3 +55,35 @@ function App() {
 }
 
 ReactDOM.render(<App />,document.getElementById("root"));
+
+//.map() is a method on every array
+const nums = [1, 2, 3, 4, 5]
+// Inside map we need to declare a function that will be run on every method of the array
+
+const square = nums.map(function(item) {
+    return item * item;
+})
+
+const names = ["alice", "bob", "chalie", "danielle"];
+
+const uppercase = names.map((name) => {
+    // Convert the first latter to Upper letter
+    return name[0].toUpperCase() + name.slice(1);
+})
+
+const pokemon = ["Bulbasaur", "Charmander", "Squirtle"];
+
+const elements = pokemon.map(mon => {
+    return `<p>${mon}</p>`;
+})
+
+// React use elements inside the arrays and place them into the components
+const colors = [<h3>Red</h3>, <h3>Orange</h3>, <h3>Yellow</h3>, <h3>Green</h3>, <h3>Blue</h3>, <h3>Indigo</h3>, <h3>Violet</h3>];
+
+function Array() {
+    return (
+        <div>
+            {colors}
+        </div>
+    )
+}
