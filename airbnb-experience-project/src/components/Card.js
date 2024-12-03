@@ -1,15 +1,16 @@
-export default function Card() {
+export default function Card({img, rating, reviewCount, country, title, price}) {
+    // If we need to combine a prop with other html, we can use {` ${}`} the back ticks as we do in vanila JS
     return (
         <div className="card">
-            <img src="katie-zaferes.png" className="card--image"/>
+            <img src = {img} className = "card--image"/>
             <div className="card--stats">
                 <img src="star.png" className="card--star"/>
-                <span>5.0</span>
-                <span className="gray">(6) </span>
-                <span className="gray">USA</span>
+                <span>{rating}</span>
+                <span className="gray">({reviewCount}) </span>
+                <span className="gray">{country}</span>
             </div>
-            <p className="hero--text">Life Lessons with Katie Zaferes</p>
-            <p className="hero--text"><span className="bold">From $136</span> / person</p>
+            <p className="hero--text">{title}</p>
+            <p className="hero--text"><span className="bold">From ${price}</span> / person</p>
         </div>
     )
 }
