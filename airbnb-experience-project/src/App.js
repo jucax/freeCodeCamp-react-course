@@ -9,21 +9,20 @@ import data from './data.js';
 
 function App() {
   const cards = data.map((card) => {
+    // Instead of passing all the props separatly to the component, we can pass all the object
+    // card = {card}
+    // There is another secret way to pass each property individually 
+    // {...card}
     return <Card 
             key = {card.id}
-            img = {card.coverImg}
-            rating = {card.stats.rating} 
-            reviewCount = {card.stats.reviewCount}
-            location = {card.location}
-            title = {card.title}
-            price = {card.price}
-            openSpots = {card.openSpots}
+            card = {card}
            />
   })
 
   return (
     <div className="container">
       <Navbar />
+      <Hero />
       <section className="cards-list">
         {cards}
       </section>
