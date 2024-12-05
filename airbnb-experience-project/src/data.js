@@ -37,5 +37,84 @@ export default [
         },
         location: "Norway",
         openSpots: 3,
+    },
+    {
+        id: 4,
+        title: "See 30+ Top London Sights. Fun Guide!",
+        description: "We will guide you on an exploration of London’s major landmarks. This will give you a good idea of the history, culture & legends of Europe’s best-loved city.",
+        price: 55,
+        coverImg: "london-sights.png",
+        stats: {
+            rating: 4.9,
+            reviewCount: 420
+        },
+        location: "London",
+        openSpots: 10,
+    },
+    {
+        id: 5,
+        title: "Vespa tour with a professional photographer",
+        description: "Join us for an exhilarating Vespa tour through Rome, a journey filled with historic sights and delightful experiences!",
+        price: 44,
+        coverImg: "vespa-tour.png",
+        stats: {
+            rating: 5,
+            reviewCount: 597
+        },
+        location: "Italy",
+        openSpots: 0,
+    },
+    {
+        id: 6,
+        title: "Explore the Universe - Teide Telescope Experience",
+        description: "I invite you to join me on this telescope adventure to unravel the secrets of the Universe from the pristine and clear skies of Teide National Park. In this activity",
+        price: 27,
+        coverImg: "explore-universe.png",
+        stats: {
+            rating: 4.9,
+            reviewCount: 551
+        },
+        location: "Spain",
+        openSpots: 22,
+    },
+    {
+        id: 7,
+        title: "Ninh Binh full day - Trang An boat trip - Dragon Mountain",
+        description: "Visit Trang An which was recognized by UNESCO as A World Heritage Site in 2014.",
+        price: 27,
+        coverImg: "trang-trip.png",
+        stats: {
+            rating: 4.9,
+            reviewCount: 551
+        },
+        location: "Vietnam",
+        openSpots: 42,
+    },
+    {
+        id: 8,
+        title: "Chichen Itza, Cenote, Comida buffet, Tequila & Valladolid",
+        description: "I will take you to explore one of the seven wonders of the modern world Chichen Itza in an unparalleled experience.",
+        price: 36,
+        coverImg: "chichen-itza.png",
+        stats: {
+            rating: 4.7,
+            reviewCount: 51
+        },
+        location: "Mexico",
+        openSpots: 0,
+    },
+    {
+        id: 9,
+        title: "Hey Captain - Social Sailing",
+        description: "We do Social Sailing, which means your captain will ask personal questions along the tour so we get to know each other and share experiences.",
+        price: 45,
+        coverImg: "social-sailing.png",
+        stats: {
+            rating: 4.8,
+            reviewCount: 1200
+        },
+        location: "Denmark",
+        openSpots: 4,
     }
+
 ]
