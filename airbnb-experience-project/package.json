@@ -2,7 +2,6 @@
   "name": "airbnb-experience-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jucax.github.io/freeCode-react-course",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
