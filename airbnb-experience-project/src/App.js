@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-//
+
+// We have to import the components to call them inside this file
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero';
 import Card from './components/Card';
