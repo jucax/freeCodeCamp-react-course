@@ -20,6 +20,7 @@ function App() {
            />
   })
 
+  // Then in the main container we call each component <Component />
   return (
     <div className="container">
       <Navbar />
