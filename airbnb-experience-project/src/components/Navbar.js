@@ -1,3 +1,4 @@
+// We need to export each component to use it in other file
 export default function Navbar() {
     return (
         <nav>
