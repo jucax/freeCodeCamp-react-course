@@ -8,7 +8,8 @@ export default function Card({card}) {
         badgeText = "ONLINE";
     }
 
-    // When we pass all the object as the prop, then we need to diretly reference it as card.
+    // When we pass all the object as the prop, then we need to diretly reference it as card
+    // Then we can insert each of the props to the component and iterate with the data
     return (
         <div className="card">
         {badgeText && <div className="card--badge">{badgeText}</div>}  
